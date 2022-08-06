@@ -92,11 +92,26 @@
 /* Finding match section */
 
 .finding-match {
-  height: 1024px;
+  height: 900px;
   background: url(/assets/images/back.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.finding-match > .container {
+  height: 100%;
+}
+
+.title-container {
+  height: 100%;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
 }
 
 .title {
@@ -120,6 +135,7 @@
   .header {
     position: absolute;
     width: 100%;
+    z-index: 1;
   }
 
   .finding-match {
@@ -128,12 +144,7 @@
   }
 
   .title {
-    width: 300px;
     font-size: 30px;
-    color: var(--white);
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 20%;
   }
 }
