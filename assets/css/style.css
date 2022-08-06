@@ -54,6 +54,8 @@
 /* navigation section */
 .header {
   background-color: var(--primary-color); 
+  position: absolute;
+  width:100%;
 }
 
 .link-white {
@@ -92,34 +94,55 @@
 /* Finding match section */
 
 .finding-match {
-  height: 900px;
   background: url(/assets/images/back.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.finding-match > .container {
-  height: 100%;
-}
-
-.title-container {
-  height: 100%;
-}
-
-.title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 30px;
+.finding-match .container{
+  height:100%;
 }
 
 .title {
-  width: 550px;
   text-align: center;
   color: var(--white);
-  font-size: 64px;
+  font-size: 40px;
   font-weight: bold;
+}
+
+.search-partner {
+  display: flex;
+  align-items: center;
+  bottom:30px;
+}
+
+.selectors-container {
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+}
+
+.search-partner .form-select {
+   width: 250px;
+   background-color: unset;
+   border: none;
+}
+.form-select:focus{
+  outline: 0 !important;
+  border:none !important;
+  box-shadow:unset  !important;
+}
+.search-button {
+  background-color: var(--primary-color) !important;
+  width: 200px;
+  padding: 20px !important;
+  border-radius: 50px !important;
+}
+
+.search-button:hover {
+  background-color: var(--primary-color-700) !important;
 }
 
 /** Responsive **/
@@ -133,18 +156,21 @@
 
 @media (max-width: 600px){
   .header {
-    position: absolute;
     width: 100%;
     z-index: 1;
   }
 
-  .finding-match {
-    height: 400px;
-    background-size: cover;
+  .title {
+    font-size: 50px;
   }
 
-  .title {
-    font-size: 30px;
-    padding-top: 20%;
+  .search-partner{
+    flex-wrap: wrap;
   }
+  .search-partner .form-select {
+    width: unset;
+ }
+ .search-button{
+  width:100% !important;
+ }
 }
