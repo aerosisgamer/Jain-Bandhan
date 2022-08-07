@@ -51,6 +51,13 @@
   display: none;
 }
 
+body{
+  background-color: var(--marino) !important;
+}
+
+.marino-background{
+  background-color: var(--marino) !important;
+}
 /* navigation section */
 .header {
   background-color: var(--primary-color); 
@@ -147,7 +154,6 @@
 
 /* create profile section */
 .create-profile-steps {
-  background-color: var(--marino);
   position: relative;
 }
 
@@ -222,15 +228,40 @@
 }
 
 
-.frame {
+.frame-container {
   background-color: var(--secondary-color);
 }
 
-.frame i{
+.frame-container i{
   line-height: unset;
   margin-right: 8px;
 }
 
+/* Blog section */
+.blog-section img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 80px;
+}
+
+.blog-section .card {
+  border: 1px solid var(--primary-color) !important;
+  border-radius: 10px !important;
+  padding: 10px;
+}
+
+.blog-section .card .card-body h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.blog-section .card .card-body a {
+  font-size: 13px;
+  color: var(--primary-color);
+  text-decoration: none;
+} 
 
 /** Responsive **/
 @media (min-width: 992px) {
