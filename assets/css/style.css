@@ -56,6 +56,17 @@ body{
 .marino-background{
   background-color: var(--marino) !important;
 }
+
+.primary-btn {
+  background-color: var(--primary-color) !important;
+  padding: 15px 20px 15px 20px !important;
+  font-size: 15px !important;
+  display: block;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-color-700) !important;
+}
 /* navigation section */
 .header {
   background-color: var(--primary-color); 
@@ -209,18 +220,6 @@ body{
   text-align: center;
 }
 
-.profile-btn {
-  background-color: var(--primary-color) !important;
-  padding: 15px 20px 15px 20px !important;
-  font-size: 15px !important;
-  display: block;
-}
-
-.profile-btn:hover {
-  background-color: var(--primary-color-700) !important;
-}
-
-
 .frame-container {
   background-color: var(--secondary-color);
 }
@@ -230,6 +229,18 @@ body{
   margin-right: 8px;
 }
 
+/* partner-section */
+
+.partner-img {
+  height: 500px;
+  opacity: 0.5;
+  transition: all 0.5s ;
+}
+
+.partner-slider .slick-center 
+{
+  opacity: 1;
+}
 /* Blog section */
 
 .blog-section img {
