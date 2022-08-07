@@ -114,7 +114,7 @@
 .search-partner {
   display: flex;
   align-items: center;
-  bottom:30px;
+  bottom: 30px;
 }
 
 .selectors-container {
@@ -166,6 +166,7 @@
 
   .search-partner{
     flex-wrap: wrap;
+    bottom: 10px;
   }
   .search-partner .form-select {
     width: unset;
