@@ -145,6 +145,93 @@
   background-color: var(--primary-color-700) !important;
 }
 
+/* create profile section */
+.create-profile-steps {
+  background-color: var(--marino);
+  position: relative;
+}
+
+.create-profile-steps::before {
+  content: '';
+  background-image: url(/assets/images/mandalaAsset\ 1\ 3.png);
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  background-size: contain;
+}
+
+
+.create-profile-steps::after {
+  content: '';
+  background-image: url(/assets/images/mandalaAsset\ 1\ 4.png);
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  right:0;
+  top:0;
+  background-size: contain;
+}
+
+.container-heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding-top: 8%;
+  border-bottom: 1px solid var(--primary-color);
+  width:max-content;
+  text-align: center;
+}
+
+.profile-steps {
+  margin-top: 80px !important;
+}
+.profile-card{
+  padding:20px;
+}
+
+.profile-card img {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.steps-count {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.step{
+  text-align: center;
+}
+
+.profile-btn {
+  background-color: var(--primary-color) !important;
+  padding: 15px 20px 15px 20px !important;
+  font-size: 15px !important;
+  display: block;
+}
+
+.profile-btn:hover {
+  background-color: var(--primary-color-700) !important;
+}
+
+
+.frame {
+  background-color: var(--secondary-color);
+}
+
+.frame i{
+  line-height: unset;
+  margin-right: 8px;
+}
+
+
 /** Responsive **/
 @media (min-width: 992px) {
 
