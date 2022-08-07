@@ -170,6 +170,7 @@
   }
   .search-partner .form-select {
     width: unset;
+    font-size: 10px;
  }
  .search-button{
   width:100% !important;
