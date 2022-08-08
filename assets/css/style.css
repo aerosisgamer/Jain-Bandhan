@@ -24,6 +24,7 @@
   --marino-700: #e3cbaf;
   --marino-800: #d6b289;
   --marino-900: #c99a64;
+  --marino-1000:#efe2d3;
   /* Dark Terra Cotta */
   --dark-terra-cotta: #d9475c;
   --dark-terra-cotta-600: #d53249;
@@ -57,6 +58,19 @@ body{
   background-color: var(--marino) !important;
 }
 
+.custom-checkbox{
+  border-color: var(--primary-color) !important;
+  background: unset !important;
+}
+.custom-checkbox:checked{
+  background-color: unset !important;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' style='color:red;'><path fill='none' stroke='%23d10a10' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !important;
+}
+.custom-checkbox:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgb(209 10 16 / 25%) !important;
+}
+
 .primary-btn {
   background-color: var(--primary-color) !important;
   padding: 15px 20px 15px 20px !important;
@@ -67,11 +81,13 @@ body{
 .primary-btn:hover {
   background-color: var(--primary-color-700) !important;
 }
+
 /* navigation section */
 .header {
   background-color: var(--primary-color); 
   position: absolute;
   width:100%;
+  z-index: 100;
 }
 
 .link-white {
@@ -281,7 +297,95 @@ footer {
   line-height: 50px;
 }
 
+/* !>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! 
+  Login Page
+!>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! */
 /** Responsive **/
+
+.login-section, .image-area {
+  height: 100vh;
+}
+.image-area{
+  background-color: var(--marino-1000);
+  position: relative;
+}
+.dulha-dulhan {
+  width: 100%;
+  object-fit: contain;
+  height:100%;
+  object-position: center;
+}
+.image-area::before , .image-area::after{
+  content: '';
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 220px;
+  position: absolute;
+  background-size: contain;
+}
+.image-area::before {
+  background-image: url(/assets/images/mandalaAsset\ 1\ 3.png);
+}
+
+.image-area::after {
+  background-image: url(/assets/images/mandalaAsset\ 1\ 4.png);
+  right:0;
+  top:0;
+  /* transform: rotate(90deg); */
+}
+
+
+.login-heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.login-sub-heading {
+  font-size: 20px;
+  color: var(--primary-color);
+  line-height: 1px;
+}
+
+.content-area {
+  width: 50%;
+  padding: 40px;
+  margin: auto;
+}
+
+.login-account {
+  margin-bottom: 100px;
+}
+
+.input-details input {
+  height: 50px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 24px rgb(34 41 47 / 10%);
+}
+
+.forgot-pass {
+  padding: 0px 15px 0px 15px;
+}
+
+.forgot-pass .form-check-label, .forgot-link {
+  color: var(--dark-terra-cotta);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.forgot-link:hover {
+  color: var(--dark-terra-cotta-700);
+}
+
+.login-page-btn {
+  width: 200px;
+  border-radius: 5px !important;
+}
+
 @media (min-width: 992px) {
 
   .links-list {
@@ -291,6 +395,7 @@ footer {
 }
 
 @media (max-width: 600px){
+
   .header {
     width: 100%;
     z-index: 1;
@@ -314,5 +419,9 @@ footer {
  .create-profile-steps::before , .create-profile-steps::after{
   width:180px;
   height:180px;
+ }
+ 
+ .content-area{
+  width: 100% !important;
  }
 }
