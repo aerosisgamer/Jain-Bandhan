@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create your profile</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Registration section starts -->
+    <section class="login-section-container">
+      <div class="d-flex login-section">
+        <div class="d-none d-md-block image-area w-50">
+          <img
+            src="assets/images/login-page-img.png"
+            alt="dulha-dulhan"
+            class="dulha-dulhan"
+          />
+        </div>
+        <div class="content-area">
+          <div class="register-account">
+            <p class="login-heading">Welcome To Jain Bandhan</p>
+            <p class="login-sub-heading">Let's create your profile!</p>
+          </div>
+
+          <div class="resgiter-details">
+            <form action="">
+              <div class="details-area">
+                <input
+                  type="text"
+                  class="form-control full-name"
+                  placeholder="Full Name"
+                />
+                <div class="gender row">
+                  <div class="col-6">
+                    <p class="mb-0">I am a</p>
+                  </div>
+                 <div class="col-6 d-flex  ">
+                    <div class="d-flex align-items-center">
+                        <input type="radio" name="gender" id="male"/>
+                        <label for="male">Male</label>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <input type="radio" name="gender" id="female"/>
+                        <label for="female">Female</label>
+                      </div>
+                 </div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control your-email"
+                  placeholder="Your Email"
+                />
+
+                <div class="date-of-birth">
+                  <p class="mb-0">Date of Birth</p>
+                  <input
+                    type="number"
+                    name="DD"
+                    onKeyDown="if(this.value.length > 1 && event.keyCode != 8) return false"
+                    class="text-center"
+                    placeholder="DD"
+                  />
+                  <input
+                    type="number"
+                    name="MM"
+                    onKeyDown="if(this.value.length > 1 && event.keyCode != 8) return false"
+                    class="text-center"
+                    placeholder="MM"
+                  />
+                  <input
+                    type="number"
+                    name="YY"
+                    onKeyDown="if(this.value.length > 3 && event.keyCode != 8) return false"
+                    class="text-center"
+                    placeholder="YY"
+                  />
+                </div>
+
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control create-pass mt-3"
+                    placeholder="Create Password"
+                  />
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    class="form-control confirm-pass mt-3"
+                    placeholder="Confirm Password"
+                  />
+                <div class="d-block text-center mt-4 pb-5">
+                  <button class="btn btn-danger primary-btn login-page-btn">
+                    Create Profile
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

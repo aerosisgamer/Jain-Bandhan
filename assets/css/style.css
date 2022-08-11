@@ -54,6 +54,14 @@ body {
   background-color: var(--marino) !important;
 }
 
+
+input {
+  height: 50px;
+  font-size: 16px !important;
+  border: none !important;
+  box-shadow: 0px 4px 24px rgb(34 41 47 / 10%)  !important;
+}
+
 .marino-background {
   background-color: var(--marino) !important;
 }
@@ -202,7 +210,7 @@ body {
 }
 
 .container-heading {
-  font-size: 30px;
+  font-size: 1.7em;
   font-weight: bold;
   color: var(--primary-color);
   padding-top: 8%;
@@ -359,15 +367,11 @@ footer {
 .login-account {
   margin-bottom: 100px;
 }
-
-.input-details input {
-  height: 50px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0px 4px 24px rgb(34 41 47 / 10%);
+.input-details input{
+  margin-bottom: 20px ;
+  border-radius: 10px ;
 }
+
 
 .forgot-pass {
   padding: 0px 15px 0px 15px;
@@ -562,6 +566,18 @@ margin-top: 15px;
   outline: 1px solid var(--primary-color);
 }
 
+.otp-section input::-webkit-outer-spin-button,
+.otp-section input::-webkit-inner-spin-button,
+#phone-no::-webkit-outer-spin-button,
+#phone-no::-webkit-inner-spin-button,
+.date-of-birth input::-webkit-outer-spin-button,
+.date-of-birth input::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 .send-again {
   float: right;
   color: var(--dark-terra-cotta-600);
@@ -580,6 +596,31 @@ margin-top: 15px;
 .disclaimer a {
   color: black;
   font-weight: bold;
+}
+
+/*
+!>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! 
+  Registration section
+!>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! 
+*/
+.full-name, .your-email, .create-pass, .confirm-pass {
+  height: 48px;
+}
+
+.gender, .date-of-birth {
+  display: flex;
+  align-items: center;
+}
+
+.gender {
+  /* width: 300px; */
+}
+
+.date-of-birth input {
+  width: 60px;
+  height: 40px;
+  outline: none;
+  border-radius: 5px;
 }
 
 /** Responsive **/
@@ -630,4 +671,10 @@ margin-top: 15px;
   .link-phone {
     width: 90vw;
   }
+
+  .otp-section input {
+    width: 50px;
+    height: 50px;
+  }
+
 }

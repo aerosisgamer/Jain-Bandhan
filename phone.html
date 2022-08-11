@@ -18,7 +18,7 @@
   <body>
 
     <section class="create-profile-steps phone-section min-vh-100">
-      <div class="container mb-4">
+      <div class="container py-4 py-md-0">
         <div class="bride-and-grooms position-relative pb-2 mb-5">
           <p class="container-heading mx-auto plan-page-heading">
             <span class="plan-heading">Welcome To Jain Bandhan</span>
@@ -32,7 +32,7 @@
             <form action="" class="phone-country-code d-flex align-items-center">
               <div class="country-code"><p class="text-center pt-1">+91</p></div>
               <div class="phone-no d-flex align-items-center">
-                <input type="text" name="phone-no" id="phone-no">
+                <input type="number" name="phone-no" id="phone-no">
                 <i class="fa-regular fa-circle-check"></i>
               </div>
             </form>
@@ -40,22 +40,22 @@
           <p class="heading-1">Enter <b>Verification Code</b> sent to <span class="user-mobile-no"><b>XXXXXX1234</b></span></p>
           <form action="" class="one-time-pass">
           <div class="otp-section d-flex justify-content-between">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <input type="number" onKeyDown="if(this.value.length > 0 && event.keyCode != 8) return false">
+            <input type="number" onKeyDown="if(this.value.length > 0 && event.keyCode != 8) return false">
+            <input type="number" onKeyDown="if(this.value.length > 0 && event.keyCode != 8) return false">
+            <input type="number" onKeyDown="if(this.value.length > 0 && event.keyCode != 8) return false">
+            <input type="number" onKeyDown="if(this.value.length > 0 && event.keyCode != 8) return false">
+            <input type="number" onKeyDown="if(this.value.length > 0 && event.keyCode != 8) return false">
           </div>
         </form>
         <a href="#send-again" class="send-again">Send Again</a>
+        <div class="d-block text-center mt-5 pb-5">
+            <button class="btn btn-danger primary-btn phone-page-btn mt-5">
+              VERIFY AND CONTINUE
+            </button>
+          </div>
+          <p class="disclaimer">By clicking verify and continue<br>you agree to our <a href="#t&c">terms of use</a><br>and have read our<a href="#p&p">privacy policy</a></p>
       </div>
-      <div class="d-block text-center mt-5 pb-5">
-          <button class="btn btn-danger primary-btn phone-page-btn mt-5">
-            VERIFY AND CONTINUE
-          </button>
-        </div>
-        <p class="disclaimer">By clicking verify and continue<br>you agree to our <a href="#t&c">terms of use</a><br>and have read our<a href="#p&p">privacy policy</a></p>
     </section>
 
     <script
