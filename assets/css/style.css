@@ -186,8 +186,8 @@ body {
 .create-profile-steps::after {
   content: "";
   background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   position: absolute;
   background-size: contain;
 }
@@ -496,6 +496,92 @@ margin-top: 15px;
   font-size: 25px;
 }
 
+/*
+!>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! 
+  Login with phone section
+!>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! 
+*/
+
+.phone-section::after {
+  top: unset !important;
+  bottom: 0 !important;
+  transform: rotate(90deg);
+}
+
+.link-phone .heading {
+  font-weight: bold;
+}
+
+.link-phone {
+  width: fit-content;
+  margin: auto;
+}
+
+.country-code {
+  background-color: var(--white);
+  width: 70px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.phone-no {
+  background-color: var(--white);
+  height: 50px;
+  width: 350px;
+  border-radius: 10px;
+  padding: 0px 15px;
+}
+
+.phone-no .fa-circle-check {
+  font-size: 20px;
+}
+
+.phone-no input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: unset;
+}
+
+.country-code, .phone-no, .otp-section input{
+  box-shadow: 0px 0px 10px rgb(209, 209, 209);
+}
+
+.otp-section input {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 30px;
+}
+
+.otp-section input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.send-again {
+  float: right;
+  color: var(--dark-terra-cotta-600);
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.phone-page-btn {
+  width: 300px;
+}
+
+.disclaimer {
+  text-align: center;
+}
+
+.disclaimer a {
+  color: black;
+  font-weight: bold;
+}
+
 /** Responsive **/
 
 @media (min-width: 992px) {
@@ -539,5 +625,9 @@ margin-top: 15px;
   /* subscription  */
   .plan-silver, .plan-gold, .plan-copper {
     width: 300px !important;
+  }
+  /* Link you phone */
+  .link-phone {
+    width: 90vw;
   }
 }
