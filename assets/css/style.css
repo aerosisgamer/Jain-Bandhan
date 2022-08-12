@@ -612,8 +612,12 @@ margin-top: 15px;
   align-items: center;
 }
 
-.gender {
-  /* width: 300px; */
+input[type='radio']#male, input[type='radio']#female {
+  accent-color: var(--primary-color);
+}
+
+label[for='female'], label[for='male']{
+  margin-left: 5px;
 }
 
 .date-of-birth input {
