@@ -682,7 +682,7 @@ label[for='female'], label[for='male']{
   }
 
   .date-of-birth input {
-    width: 50px;
+    width: 40px;
   }
 
 }
