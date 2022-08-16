@@ -1,0 +1,67 @@
+:root {
+    /* primary color */
+    --primary-color: #d10a10;
+    --primary-color-600: #b9090e;
+    --primary-color-700: #88070a;
+    --primary-color-800: #570407;
+    --primary-color-900: #270203;
+    /* secondary color */
+    --secondary-color: #f4900e;
+    --secondary-color-600: #de820a;
+    --secondary-color-700: #ae6608;
+    --secondary-color-800: #7d4906;
+    --secondary-color-900: #4c2c03;
+    /* commom-colors */
+    --white: #ffff;
+    --black: #000000;
+    --grey: #393939;
+    /* Merino */
+    --marino: #f7f0e8;
+    --marino-600: #f0e4d5;
+    --marino-700: #e3cbaf;
+    --marino-800: #d6b289;
+    --marino-900: #c99a64;
+    --marino-1000: #efe2d3;
+    /* Dark Terra Cotta */
+    --dark-terra-cotta: #d9475c;
+    --dark-terra-cotta-600: #d53249;
+    --dark-terra-cotta-700: #af2438;
+    --dark-terra-cotta-800: #851b2b;
+    --dark-terra-cotta-900: #5b131d;
+    /* Dogwood rose */
+    --dogwood-rose: #d52057;
+    --dogwood-rose-600: #bf1d4e;
+    --dogwood-rose-700: #92163c;
+    --dogwood-rose-800: #660f2a;
+    --dogwood-rose-900: #3a0918;
+    /* Bittersweet  */
+    --bittersweet: #f56c66;
+    --bittersweet-600: #f3554e;
+    --bittersweet-700: #f0271e;
+    --bittersweet-800: #ce160d;
+    --bittersweet-900: #9e110a;
+  }
+
+.tab-section {
+  margin-top: 80px;
+}
+
+.nav-link {
+  color: var(--grey) !important;
+}
+
+.nav-link.active {
+    border: unset !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.tabs-label {
+    font-size: 16px !important;
+    color: var(--grey);
+}
+
+.tab-input {
+    width: 250px !important;
+    height: 45px;
+}

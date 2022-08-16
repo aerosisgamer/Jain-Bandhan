@@ -60,7 +60,7 @@ input {
   font-size: 16px !important;
   box-shadow: 0px 4px 24px rgb(34 41 47 / 10%)  !important;
 }
-input[type="text"],input[type="number"],input[type="password"],input[type="email"],select{
+.edited-input,select{
   border: none !important;
 }
 
@@ -91,6 +91,13 @@ input[type="text"],input[type="number"],input[type="password"],input[type="email
 .primary-btn:hover {
   background-color: var(--primary-color-700) !important;
 }
+
+.tab-heading {
+  color: var(--primary-color) !important;
+  background-color: none !important;
+  border-bottom: 2px solid var(--primary-color) !important;
+}
+
 
 /* navigation section */
 .header {
@@ -627,6 +634,78 @@ label[for='female'], label[for='male']{
   height: 40px;
   outline: none;
   border-radius: 5px;
+}
+
+/*
+!>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! 
+  Dashboard S1 section
+!>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! 
+*/
+.dashboard-section {
+  height: 100vh;
+}
+
+.profile-pic {
+  width: 250px;
+  height:250px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  transform: scale(1.2);
+}
+
+.profile-score {
+  width: 250px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px 30px 20px 30px;
+}
+
+.score-percent, .score, .complete-profile {
+  font-weight: bold;
+}
+
+.score {
+  font-size: 10px;
+}
+
+.score-container {
+  margin-right: 20px;
+}
+
+.score-percent {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.complete-profile {
+  font-size: 10px;
+}
+
+.add-details {
+  font-size: 9px;
+  padding: 3px 20px 3px 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: unset;
+}
+
+.user-display-name {
+  color: var(--primary-color);
+}
+
+.update-btn {
+  padding: 15px 50px 15px 50px !important;
+}
+
+.input-custom {
+  width: 200px !important;
+  height: 40px;
+  text-align: center;
+  border: 1px solid black !important;
+  margin: auto;
 }
 
 /** Responsive **/

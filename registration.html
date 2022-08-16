@@ -34,80 +34,97 @@
 
           <div class="resgiter-details">
             <form action="">
-              <div class="details-area">
+              <di class="details-area">
                 <input
                   type="text"
-                  class="form-control full-name"
+                  class="form-control full-name edited-input"
                   placeholder="Full Name"
                 />
                 <div class="gender row">
                   <div class="col-4 col-md-6">
                     <p class="mb-0">I am a</p>
                   </div>
-                 <div class="col-8 col-md-6 d-flex gap-5 ">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <input type="radio" name="gender" id="male" class="custom-radio"/>
-                        <label for="male">Male</label>
-                      </div>
-                      <div class="d-flex align-items-center justify-content-between">
-                        <input type="radio" name="gender" id="female" class="custom-radio"/>
-                        <label for="female">Female</label>
-                      </div>
-                 </div>
+                  <div class="col-8 col-md-6 d-flex gap-5">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        class="custom-radio"
+                      />
+                      <label for="male">Male</label>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        class="custom-radio"
+                      />
+                      <label for="female">Female</label>
+                    </div>
+                  </div>
                 </div>
                 <input
                   type="text"
-                  class="form-control your-email"
+                  class="form-control your-email edited-input"
                   placeholder="Your Email"
                 />
 
-                <div class="date-of-birth row mt-3 ">
+                <div class="date-of-birth row mt-3">
                   <div class="col-5 col-md-6">
                     <p class="mb-0">Date of Birth</p>
                   </div>
                   <div class="col-7 col-md-6 dob-inputs">
                     <input
-                    type="number"
-                    name="DD"
-                    onKeyDown="if(this.value.length > 1 && event.keyCode != 8) return false"
-                    class="text-center"
-                    placeholder="DD"
-                  />
-                  <input
-                    type="number"
-                    name="MM"
-                    onKeyDown="if(this.value.length > 1 && event.keyCode != 8) return false"
-                    class="text-center"
-                    placeholder="MM"
-                  />
-                  <input
-                    type="number"
-                    name="YY"
-                    onKeyDown="if(this.value.length > 3 && event.keyCode != 8) return false"
-                    class="text-center"
-                    placeholder="YY"
-                  />
+                      type="number"
+                      name="DD"
+                      onKeyDown="if(this.value.length > 1 && event.keyCode != 8) return false"
+                      class="text-center edited-input"
+                      placeholder="DD"
+                    />
+                    <input
+                      type="number"
+                      name="MM"
+                      onKeyDown="if(this.value.length > 1 && event.keyCode != 8) return false"
+                      class="text-center edited-input"
+                      placeholder="MM"
+                    />
+                    <input
+                      type="number"
+                      name="YY"
+                      onKeyDown="if(this.value.length > 3 && event.keyCode != 8) return false"
+                      class="text-center edited-input"
+                      placeholder="YY"
+                    />
                   </div>
                 </div>
 
-                  <input
-                    type="password"
-                    name="password"
-                    class="form-control create-pass mt-3"
-                    placeholder="Create Password"
-                  />
-                  <input
-                    type="password"
-                    name="confirm-password"
-                    class="form-control confirm-pass mt-3"
-                    placeholder="Confirm Password"
-                  />
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control create-pass mt-3 edited-input"
+                  placeholder="Create Password"
+                />
+                <input
+                  type="password"
+                  name="confirm-password"
+                  class="form-control confirm-pass mt-3 edited-input"
+                  placeholder="Confirm Password"
+                />
                 <div class="d-block text-center mt-4">
-                  <a href="phone.html" class="btn btn-danger primary-btn login-page-btn">
+                  <a
+                    href="phone.html"
+                    class="btn btn-danger primary-btn login-page-btn"
+                  >
                     Create Profile
                   </a>
                 </div>
-              </div>
+              </di edited-inputv>
             </form>
           </div>
         </div>
