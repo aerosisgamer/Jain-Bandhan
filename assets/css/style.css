@@ -60,6 +60,9 @@ input {
   font-size: 16px !important;
   box-shadow: 0px 4px 24px rgb(34 41 47 / 10%)  !important;
 }
+.max-250{
+  max-width: 250px;
+}
 .edited-input,select{
   border: none !important;
 }
@@ -772,7 +775,7 @@ label[for='female'], label[for='male']{
   .nav-item ,.nav-link{
     width:100%;
   }
-  .tab-input{
-    width:100% !important;
+  .max-250{
+    max-width:100% !important;
   }
 }

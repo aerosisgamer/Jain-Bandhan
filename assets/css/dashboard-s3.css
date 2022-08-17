@@ -18,10 +18,6 @@
     color: var(--grey);
 }
 
-.tab-input {
-    width: 250px;
-    height: 45px;
-}
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
   border:none;
 }
