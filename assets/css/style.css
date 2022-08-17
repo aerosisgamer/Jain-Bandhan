@@ -772,5 +772,7 @@ label[for='female'], label[for='male']{
   .nav-item ,.nav-link{
     width:100%;
   }
-
+  .tab-input{
+    width:100% !important;
+  }
 }
