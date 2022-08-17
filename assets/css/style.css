@@ -580,7 +580,9 @@ margin-top: 15px;
 #phone-no::-webkit-outer-spin-button,
 #phone-no::-webkit-inner-spin-button,
 .date-of-birth input::-webkit-outer-spin-button,
-.date-of-birth input::-webkit-inner-spin-button
+.date-of-birth input::-webkit-inner-spin-button,
+.tab-input::-webkit-outer-spin-button,
+.tab-input::-webkit-inner-spin-button
 {
   -webkit-appearance: none;
   margin: 0;
@@ -764,6 +766,11 @@ label[for='female'], label[for='male']{
 
   .date-of-birth input {
     width: 46px;
+  }
+
+  /* dashboard section */
+  .nav-item ,.nav-link{
+    width:100%;
   }
 
 }
