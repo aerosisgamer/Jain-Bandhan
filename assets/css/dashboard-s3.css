@@ -1,0 +1,23 @@
+
+.tab-section {
+  margin-top: 80px;
+}
+
+.nav-link {
+  color: var(--grey) !important;
+}
+
+.nav-link.active {
+    border: unset !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.tabs-label {
+    font-size: 16px !important;
+    color: var(--grey);
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border:none;
+}
