@@ -412,6 +412,17 @@ footer {
 !>!>!>>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>!>! 
 */
 
+.plan-pop-up {
+  transform: scale(1.1);
+}
+
+.pop-transition{
+  transition: 0.3s;
+}
+
+.plan-container {
+  z-index: 100;
+}
 
 .plan-page-heading {
   border: none;
