@@ -447,16 +447,10 @@ footer {
 }
 
 .plan-silver {
-  background: linear-gradient(
-    157.3deg,
-    rgba(243, 243, 242, 0.557234) -8.07%,
-    rgba(255, 255, 255, 0) 7.98%,
-    #dddedb 72.63%,
-    #d9d9d7 102.14%,
-    rgba(255, 255, 255, 0.3407) 104.53%,
-    #ffffff 129.97%,
-    rgba(255, 255, 255, 0.747365) 138.8%
-  );
+  background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .plan-gold {
